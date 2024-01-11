@@ -1,3 +1,17 @@
+import { ClerkProvider } from "@clerk/nextjs";
+
+const Layout = ({ children }) => {
+  return (
+    <ClerkProvider>
+
+      { children }
+    </ClerkProvider>
+  );
+};
+
+export default Layout;
+
+/*
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -19,4 +33,4 @@ export default function RootLayout({
       <body className={inter.className}>{children}</body>
     </html>
   )
-}
+}*/
